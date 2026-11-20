@@ -44,3 +44,71 @@ body {
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 1);
 }
+
+/* Inhalt in 1440px */
+
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Restaurant: großes Bild, Logo halb darüber, Name, Bewertung, Infos (statisch) */
+
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 32px 40px;
+    text-align: center;
+}
+
+.hero-image {
+    width: calc(100% + 64px);
+    height: 360px;
+    background-color: rgba(251, 230, 221, 1);
+}
+
+.restaurant-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    margin-top: -80px;
+    border: 6px solid rgba(219, 100, 36, 1);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 80px;
+}
+
+.restaurant-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.restaurant-name {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.rating {
+    padding: 4px 12px;
+    border-radius: 8px;
+    background-color: rgba(251, 230, 221, 1);
+    font-weight: 700;
+}
+
+.restaurant-description {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.restaurant-delivery {
+    margin-top: 4px;
+    font-size: 14px;
+    color: rgba(90, 90, 90, 1);
+}
