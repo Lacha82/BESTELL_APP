@@ -130,3 +130,19 @@ body {
     width: 300px;
     flex-shrink: 0;                 /* bleibt immer 300px breit */
 }
+
+/* Footer: Farbe über die volle Breite, Inhalt in 1440px */
+
+.footer {
+    background-color: rgba(219, 100, 36, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 24px 32px;
+}
