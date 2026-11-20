@@ -1,1 +1,46 @@
 /* Seite: Header, Inhalt, Footer */
+
+body {
+    padding-top: 80px;
+}
+
+/* Header: Farbe über die volle Breite, Inhalt in 1440px */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(219, 100, 36, 1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Burger-Menü ist nur ein Platzhalter ohne Funktion */
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.burger-menu span {
+    width: 32px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 1);
+}
