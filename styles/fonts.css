@@ -1,1 +1,29 @@
-/* Schriften aus assets/fonts (Figma-Vorlage: Figtree) */
+/* Schrift aus der Figma-Vorlage: Figtree (lokal in assets/fonts) */
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('../assets/fonts/figtree-v9-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('../assets/fonts/figtree-v9-latin-500.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('../assets/fonts/figtree-v9-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('../assets/fonts/figtree-v9-latin-800.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
