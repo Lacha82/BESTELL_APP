@@ -146,3 +146,63 @@ body {
     margin: 0 auto;
     padding: 24px 32px;
 }
+
+/* Mobil: Header nicht mehr fixed, Warenkorb rechts ausgeblendet (kommt später als Dialog) */
+
+@media screen and (max-width: 767px) {
+    body {
+        padding-top: 0;
+    }
+
+    .header {
+        position: static;
+    }
+
+    .header-content {
+        height: 64px;
+        padding: 0 16px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .restaurant {
+        padding: 0 16px 24px;
+    }
+
+    .hero-image {
+        width: calc(100% + 32px);
+        height: 200px;
+    }
+
+    .restaurant-logo {
+        width: 112px;
+        height: 112px;
+        margin-top: -56px;
+        border-width: 4px;
+        font-size: 56px;
+    }
+
+    .restaurant-name {
+        font-size: 32px;
+    }
+
+    .restaurant-description {
+        font-size: 16px;
+    }
+
+    .content-wrapper {
+        padding: 0 16px 32px;
+    }
+
+    .basket-wrapper {
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 4px;
+        padding: 16px;
+    }
+}
