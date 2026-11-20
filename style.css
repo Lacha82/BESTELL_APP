@@ -148,7 +148,15 @@ body {
     font-size: 14px;
 }
 
-/* Mobil: Header nicht mehr fixed, Warenkorb rechts ausgeblendet (kommt später als Dialog) */
+/* Tablet und Mobil: Warenkorb rechts ausgeblendet (kommt als Dialog über einen Button) */
+
+@media screen and (max-width: 1023px) {
+    .basket-wrapper {
+        display: none;
+    }
+}
+
+/* Mobil: Header nicht mehr fixed */
 
 @media screen and (max-width: 767px) {
     body {
@@ -193,10 +201,6 @@ body {
 
     .content-wrapper {
         padding: 0 16px 32px;
-    }
-
-    .basket-wrapper {
-        display: none;
     }
 
     .footer-content {
