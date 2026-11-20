@@ -1,0 +1,106 @@
+/* Gerichte: Kategorie-Balken und Karten (Bootstrap-Karte, angepasst an Figma) */
+
+.category-title {
+    margin: 40px 0 24px;
+    padding: 12px 24px;
+    background-color: rgba(231, 107, 33, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.category-title:first-child {
+    margin-top: 0;
+}
+
+.dish-card {
+    max-width: 720px;
+    margin: 0 auto 24px;
+    padding: 12px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(255, 238, 224, 1);
+}
+
+.dish-image {
+    width: 100%;
+    height: 100%;
+    min-height: 128px;
+    object-fit: cover;              /* füllt die Fläche ohne Verzerrung */
+    border-radius: 12px;
+}
+
+/* Text rechts: Name und Preis oben, Button unten rechts */
+.dish-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 0 0 16px;
+}
+
+.dish-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.dish-name {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.dish-price {
+    font-size: 20px;
+    font-weight: 500;
+    white-space: nowrap;            /* Preis nie umbrechen */
+}
+
+.dish-description {
+    margin-top: 4px;
+    font-size: 15px;
+    color: rgba(60, 60, 60, 1);
+}
+
+.dish-button {
+    align-self: flex-end;
+    margin-top: auto;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dish-button:hover {
+    background-color: rgba(231, 107, 33, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Unter 576px: Bild oben, Text darunter (Bootstrap col-sm) */
+
+@media screen and (max-width: 575px) {
+    .category-title {
+        margin: 32px 0 16px;
+        padding: 8px 16px;
+        font-size: 24px;
+    }
+
+    .dish-image {
+        height: 160px;
+    }
+
+    .dish-body {
+        padding: 12px 0 0;
+    }
+
+    .dish-name {
+        font-size: 20px;
+    }
+
+    .dish-button {
+        margin-top: 12px;
+    }
+}
