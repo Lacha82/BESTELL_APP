@@ -1,0 +1,9 @@
+/* Nur echte Standards, die für die ganze Seite gelten */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
