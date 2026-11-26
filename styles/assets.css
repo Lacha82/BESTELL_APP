@@ -1,1 +1,5 @@
 /* Bausteine, die mehrfach vorkommen, z. B. Buttons */
+
+.text-orange {
+    color: rgba(231, 107, 33, 1);
+}

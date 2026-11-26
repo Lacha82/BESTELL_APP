@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BurgerHouse</title>
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/standard.css">
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/assets.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/dishes.css">
     <link rel="stylesheet" href="./styles/basket.css">
     <script src="./scripts/db.js"></script>
     <script src="./scripts/template.js"></script>
@@ -17,19 +20,48 @@
 
 <body onload="init()">
     <header class="header">
+        <div class="header-content">
+            <img class="header-logo" src="./assets/img/logo-bestellapp.png" alt="Bestell App">
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
 
-    <div class="content_wrapper">
-        <main class="content">
-            <section id="dishes" class="dishes"></section>
-        </main>
+    <main class="main">
+        <section class="restaurant">
+            <img class="hero-image" src="./assets/img/hero.jpg" alt="Burger, fries and pizza on a wooden table">
+            <img class="restaurant-logo" src="./assets/img/logo-burgerhouse.png" alt="BurgerHouse logo">
+            <div class="restaurant-title">
+                <h1 class="restaurant-name"><span class="text-orange">Burger</span>House</h1>
+                <span class="rating">★ 4,1 <span class="rating-count">(317)</span></span>
+            </div>
+            <p class="restaurant-description">The best of Burgers, Pizza, and Greens, all in one great place.</p>
+            <p class="restaurant-delivery">Delivery fee 4,99 €</p>
+        </section>
 
-        <aside class="basket_wrapper">
-            <div id="basket" class="basket"></div>
-        </aside>
-    </div>
+        <div class="content-wrapper">
+            <section id="dishes" class="dishes"></section>
+
+            <aside class="basket-wrapper">
+                <div class="basket">
+                    <h2 class="basket-title">Your Basket</h2>
+                    <div id="basketItems" class="basket-items">
+                        <p class="basket-empty">Nothing here yet.<br>Go ahead and choose something delicious!</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
 
     <footer class="footer">
+        <div class="footer-content">
+            <span>© 2026 BurgerHouse</span>
+            <span>Imprint</span>
+            <span>Cookie Preferences</span>
+        </div>
     </footer>
 </body>
 
